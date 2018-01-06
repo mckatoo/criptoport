@@ -16,9 +16,8 @@ import javax.ws.rs.core.MediaType;
  *
  * @author mckatoo
  */
-
-@Path("usuarios")
-public class Usuarios {
+@Path("hello")
+public class HelloController {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getMensagem(@QueryParam("usuario") String usuario){
@@ -27,7 +26,7 @@ public class Usuarios {
     
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    @Path("usuario/{id}")
+    @Path("usuarios/{id}")
     public String getUsuario(@PathParam("id") long id){
         return "Recuperando usuario com ID: " + id;
     }

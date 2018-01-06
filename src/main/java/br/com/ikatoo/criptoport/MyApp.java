@@ -13,9 +13,9 @@ import org.glassfish.jersey.server.ResourceConfig;
  * @author mckatoo
  */
 
-@ApplicationPath("rest")
+@ApplicationPath("/rest")
 public class MyApp extends ResourceConfig {
-    public MyApp(){
+    public MyApp() {
         packages("br.com.ikatoo.criptoport.controllers");
     }
 }
